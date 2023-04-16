@@ -29,8 +29,8 @@ while True:
   options = webdriver.ChromeOptions()
 
   options.add_argument("headless")
-# chrome_options=options
-  dr = webdriver.Chrome()
+
+  dr = webdriver.Chrome(chrome_options=options)
         
   url = 'https://www.youtube.com/results?search_query=%s'%query
 
@@ -69,13 +69,13 @@ while True:
   while True:   
     mod = input("어느 형식으로 저장하시겠습니까? (mp4음원, mp4영상) 음원/ 영상으로 입력해 주십시오.\n(취소 = q)\n")
 
-    if(mod == "음원"):
+    if (mod == "음원"):
       for i in dlSet:
         yt = YouTube(videoUrls[i - 1])
         yt.streams.filter(only_audio=True).first().download('C:/Users/Ku/Downloads')
       break
 
-    elif(mod == "영상"):
+    elif (mod == "영상"):
       for i in dlSet:
         yt = YouTube(videoUrls[i - 1])
         yt.streams.filter().get_highest_resolution().download('C:/Users/Ku/Downloads')
