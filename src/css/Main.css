@@ -1,0 +1,72 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Header */
+
+header {
+    margin-top: 1%;
+    display: flex;
+}
+
+header .teamName {
+    margin-left: 5%;
+    font-weight: 700;
+}
+
+header .Home {
+    border: none;
+    background-color: #FFFFFF;
+    margin-left: 72%;
+}
+
+header .Home:hover {
+    cursor: pointer;
+}
+
+header .loginBtn {
+    border: none;
+    background-color: #FFFFFF;
+}
+
+header .loginBtn:hover {
+    cursor: pointer;
+}
+
+/* Section */
+
+section {
+    margin-top: 2%;
+}
+
+section .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .nameTop {
+    margin-left: 5%;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 90%;
+}
+
+section .nameBottom {
+    margin-left: 5%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90%;
+}
+
+section img {
+    width: 40%;
+    height: 30%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section img:hover {
+    cursor: pointer;
+}

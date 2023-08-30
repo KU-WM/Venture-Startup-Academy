@@ -1,0 +1,72 @@
+/* Section */
+
+.loginSection {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+section .login {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+section .line {
+    margin: 30px 0 20px;
+    border: 1px solid black;
+    width: 94.7%;
+}
+
+section .Id {
+    display: flex;
+}
+
+section .Id .birth {
+}
+
+section .Id input {
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+
+section .Id .warn {
+    margin-left: 50%;
+}
+
+section .loginBtn {
+    margin-left: 90%;
+}
+
+section .loginBtn:hover {
+    background-color: #000000;
+    color: #F5F5F5;
+}
+
+/* Modal */
+
+.openedModal {
+    position: fixed;
+    justify-content: center;
+    top: calc(50% - 50px);
+    left: calc(50% - 150px);
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    z-index: 2;
+    border: 1px solid red;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+main .onModal {
+    justify-content: center;
+}
+
+.openedModalBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
